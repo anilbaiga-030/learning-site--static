@@ -1,0 +1,497 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#header {
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  /* border: 2px solid red; */
+}
+
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* These img logo and div header-text are inside the container means they are also getting margin 100px from both left and right side */
+.logo {
+  margin-top: 30px;
+  width: 100px;
+}
+
+/* header-text(div) being as block element start with the new line that's why it's at the left logo image */
+.header-text {
+  width: 350px;
+  margin-top: 140px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 18px;
+  color: #777;
+}
+
+.square {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: #f67c92;
+  margin: 15px 0;
+}
+
+.common-btn {
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #f67c92;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*  We want change only in button inside header-text */
+.header-text button {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.line-1 {
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  background-color: #f67c92;
+}
+.line-2 {
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background-color: #f67c92;
+}
+.line-3 {
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  background-color: #f67c92;
+}
+
+.line {
+  line-height: 8px;
+}
+
+#sideNav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #f67c92;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0 0 1.4rem 0 #df2d4d;
+  transform: translateY(-1px);
+  transition: 250ms;
+}
+
+#menuBtn {
+  width: 50px;
+  position: fixed;
+  top: 35px;
+  right: 65px;
+  z-index: 2;
+  cursor: pointer;
+}
+#menuBtn:hover {
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #df2d4d;
+  transform: translateY(-1px);
+  transition: 250ms;
+}
+
+/* About Section Styling */
+
+#about,
+#offer {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 3px solid black; */
+}
+
+.about-left-col {
+  flex-basis: 50%;
+  /* border: 1px solid red; */
+}
+
+.about-left-col img {
+  width: 100%;
+}
+
+.about-right-col {
+  flex-basis: 50%;
+  text-align: right;
+  /* border: 1px solid red; */
+}
+
+.about-text {
+  max-width: 500px;
+  margin-right: 100px;
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+.about-text h2 {
+  margin-top: 18px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.about-text h3 {
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
+
+/* ----features---- */
+
+#features {
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* border: 1px solid red; */
+}
+.feature-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+.feature-col {
+  flex-basis: 25%;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
+.feature-col img {
+  width: 100%;
+}
+.feature-col h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.feature-btn {
+  margin: 80px auto 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.feature-btn .line {
+  text-align: right;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/* ----Courses Section Styling---- */
+#courses {
+  padding: 100px 0;
+  /* border: 2px solid red; */
+}
+
+.course-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 2px solid blue; */
+}
+
+.course-right-col {
+  flex-basis: 40%;
+  /* border: 1px solid black; */
+}
+.course-right-col img {
+  width: 100%;
+}
+
+.course-left-col {
+  flex-basis: 50%;
+  padding-left: 50px;
+  /* border: 1px solid black; */
+}
+.course-text {
+  max-width: 400px;
+}
+.course-text button {
+  margin: 30px 0;
+}
+
+/* ----Courses Section Styling---- */
+
+#offer button {
+  margin: 30px 0;
+}
+
+/* ----Contact Section ---- */
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-left-col,
+.contact-right-col {
+  flex-basis: 50%;
+  /* border: 1px solid black; */
+}
+
+.contact-right-col img {
+  width: 100%;
+}
+
+form {
+  max-width: 350px;
+  margin: 30px 0;
+}
+
+form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 5px;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 2px solid #fab3c5;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.btn-box button {
+  flex-basis: 48%;
+  padding: 18px 0;
+}
+
+/* Footer */
+#footer {
+  margin: 50px 0 30px;
+  /* border: 1px solid red; */
+}
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #f67c92;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left-col {
+  flex-basis: 50%;
+  margin-top: 60px;
+}
+
+.footer-right-col {
+  flex-basis: 35%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-title h4 {
+  color: #fab3c4;
+  margin-bottom: 20px;
+}
+.link-title small {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-logo button {
+  padding: 12px 35px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.copyright-text,
+.footer-logo {
+  flex-basis: 40%;
+}
+
+/* ---socail-icons */
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.social-icons img {
+  display: block;
+  width: 30px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
+.social-icons img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1.4rem 0 #777;
+  transform: translateY(-2px);
+  transition: 250ms;
+}
+
+/* Let's design for to be responsive looking */
+
+@media only screen and (max-width: 770px) {
+  #header {
+    background-image: none;
+  }
+  .container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  /* These img logo and div header-text are inside the container means they are also getting margin 100px from both left and right side */
+  .logo {
+    margin-top: 27px;
+    width: 70px;
+  }
+
+  /* header-text(div) being as block element start with the new line that's why it's at the left logo image */
+  .header-text {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #menuBtn {
+    width: 40px;
+    right: 50px;
+  }
+
+  .common-btn {
+    padding: 10px 16px;
+  }
+
+  .social-icons img {
+    display: block;
+    width: 16px;
+    margin: 15px auto;
+  }
+  .about-left-col,
+  .about-right-col {
+    flex-basis: 100%;
+  }
+
+  .about-text {
+    margin: 50px 40px 0;
+    display: inline-block;
+    /* border: 1px solid red; */
+  }
+  .about-text h2 {
+    font-size: 18px;
+  }
+
+  .about-text h3 {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+  }
+
+  .feature-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .feature-col img {
+    width: 50%;
+  }
+  .course-left-col {
+    flex-basis: 100%;
+  }
+
+  .course-right-col {
+    flex-basis: 100%;
+    margin-top: 70px;
+  }
+  .contact-left-col {
+    flex-basis: 100%;
+  }
+  .contact-right-col {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%;
+  }
+  .link-title {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  #sideNav {
+    width: 140px;
+    height: 85vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #e68395d8;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav ul {
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+}
